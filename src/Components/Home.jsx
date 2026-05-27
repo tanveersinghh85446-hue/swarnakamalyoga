@@ -5,21 +5,21 @@ import Faq from "./Faq";
 
 const slides = [
   {
-    img: "/Home4.avif",
+    img: "/Home4.AVIF",
     title: "SWARNA KAMAL YOGA",
     sub: "Transform your mind, body & soul since 2012",
     btn: "Book a Free Trial",
     to: "/apply",
   },
   {
-    img: "/Home2.avif",
+    img: "/Home2.AVIF",
     title: "TEACHER TRAINING COURSES",
     sub: "Internationally recognized Teacher Training Courses",
     btn: "View Courses",
     to: "/courses",
   },
   {
-    img: "/Home2.avif",
+    img: "/Home2.AVIF",
     title: "ONLINE CLASSES",
     sub: "Learn from anywhere — flexible batches available",
     btn: "Apply Now",
@@ -67,7 +67,7 @@ const whyUs = [
   {
     title: "All Ages Welcome",
     desc: "From toddlers to seniors — classes for every age group and fitness level.",
-    img: "OldAge.AVIF",
+    img: "/OldAge.AVIF",
     to: "/about",
   },
   {
