@@ -303,7 +303,7 @@ const Apply = () => {
               <div className="bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden">
                 <div className="bg-white px-4 sm:px-8 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
                   <img
-                    src="/Start.avif"
+                    src="/Start.AVIF"
                     alt="Logo"
                     className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
                   />
@@ -313,7 +313,7 @@ const Apply = () => {
                   </h2>
 
                   <img
-                    src="/Start.avif"
+                    src="/Start.AVIF"
                     alt="Logo"
                     className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
                   />

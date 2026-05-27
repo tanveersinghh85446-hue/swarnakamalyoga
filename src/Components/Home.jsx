@@ -45,7 +45,7 @@ const courses = [
   {
     title: "300 Hour TTC",
     desc: "Advanced training for deepening practice and teaching skills.",
-    img: "/Samita-copy.avif",
+    img: "/Samita-copy.AVIF",
     to: "/ThreeHundred",
     badge: "Advanced",
   },
@@ -55,25 +55,25 @@ const whyUs = [
   {
     title: "16+ Years of Excellence",
     desc: "Established in 2012, one of Bengaluru's most trusted yoga institutions.",
-    img: "16YOE.avif",
+    img: "16YOE.AVIF",
     to: "/about",
   },
   {
     title: "Globally Recognized Certification",
     desc: "TTC programs follow Yoga Alliance standards, accepted worldwide.",
-    img: "Globally_Recognized_Certification.avif",
+    img: "Globally_Recognized_Certification.AVIF",
     to: "/courses",
   },
   {
     title: "All Ages Welcome",
     desc: "From toddlers to seniors — classes for every age group and fitness level.",
-    img: "OldAge.avif",
+    img: "OldAge.AVIF",
     to: "/about",
   },
   {
     title: "Online",
     desc: "Can't visit in person? Our hybrid learning model lets you practice from home.",
-    img: "Online.avif",
+    img: "Online.AVIF",
     to: "/courses",
   },
   {
@@ -85,7 +85,7 @@ const whyUs = [
   {
     title: "Personalized Guidance",
     desc: "Small batch sizes ensure every student receives individual attention.",
-    img: "Personalized_Guidance.avif",
+    img: "Personalized_Guidance.AVIF",
     to: "/contact",
   },
 ];
@@ -352,7 +352,7 @@ const Home = () => {
             <FadeIn delay={0.2} className="flex-1 flex justify-center">
               <div className="img-zoom w-64 sm:w-72 md:w-80 h-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-100">
                 <img
-                  src="/Samita4.avif"
+                  src="/Samita4.AVIF"
                   alt="Yoga"
                   className="w-full h-full object-cover"
                 />
