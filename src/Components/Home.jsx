@@ -61,7 +61,7 @@ const whyUs = [
   {
     title: "Globally Recognized Certification",
     desc: "TTC programs follow Yoga Alliance standards, accepted worldwide.",
-    img: "Globally_Recognized_Certification.AVIF",
+    img: "/GloballyRecognizedCertification.AVIF",
     to: "/courses",
   },
   {
