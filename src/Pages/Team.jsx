@@ -24,7 +24,7 @@ export default function Team() {
             <div className="w-full md:w-1/3 bg-linear-to-b from-red-50 to-white p-8 flex flex-col items-center justify-start">
               <div className="w-48 h-48 rounded-lg overflow-hidden mb-4 shadow-lg">
                 <img
-                  src="/Sarita Sahu.AVIF"
+                  src="Sarita Sahu.AVIF"
                   alt="Sarita Sahu"
                   className="w-full h-full object-cover"
                 />
@@ -156,7 +156,7 @@ export default function Team() {
             <div className="w-full md:w-1/3 bg-linear-to-b from-red-50 to-white p-8 flex flex-col items-center justify-start">
               <div className="w-48 h-48 rounded-lg overflow-hidden mb-4 shadow-lg">
                 <img
-                  src="/P.Shree.Vilasith.AVIF"
+                  src="P.Shree.Vilasith.AVIF"
                   alt="P Shree Vilasitha"
                   className="w-full h-full object-cover"
                 />
@@ -300,7 +300,7 @@ export default function Team() {
             <div className="w-full md:w-1/3 bg-linear-to-b from-red-50 to-white p-8 flex flex-col items-center justify-start">
               <div className="w-48 h-48 rounded-lg overflow-hidden mb-4 shadow-lg">
                 <img
-                  src="/Dasari Nanditha.AVIF"
+                  src="Dasari Nanditha.AVIF"
                   alt="Dasari Nanditha"
                   className="w-full h-full"
                 />
@@ -398,7 +398,7 @@ export default function Team() {
             <div className="w-full md:w-1/3 bg-linear-to-b from-red-50 to-white p-8 flex flex-col items-center justify-start">
               <div className="w-48 h-48 rounded-lg overflow-hidden mb-4 shadow-lg">
                 <img
-                  src="/Sangeeta Sil.AVIF"
+                  src="Sangeeta Sil.AVIF"
                   alt="Sangeeta Sil"
                   className="w-full h-full"
                 />
@@ -532,7 +532,7 @@ export default function Team() {
             {/* LEFT - PHOTO & NAME */}
             <div className="w-full md:w-1/3 bg-linear-to-b from-red-50 to-white p-8 flex flex-col items-center justify-start">
               <div className="w-48 h-48 rounded-lg overflow-hidden mb-4 shadow-lg">
-                <img src="/Karan.AVIF" alt="Karan" className="w-full h-full" />
+                <img src="Karan.AVIF" alt="Karan" className="w-full h-full" />
               </div>
               <h3 className="text-red-700 font-bold text-2xl text-center">
                 KARAN

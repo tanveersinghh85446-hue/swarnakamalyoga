@@ -16,7 +16,7 @@ export default function CourseLayout({
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Home1.jpg"
+            src="Home1.jpg"
             alt="Yoga"
             className="w-full h-full object-cover"
           />

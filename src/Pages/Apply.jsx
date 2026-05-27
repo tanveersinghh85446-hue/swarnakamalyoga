@@ -232,7 +232,7 @@ const Apply = () => {
       {/* ── HERO BANNER ── */}
       <div className="relative w-full h-[38vh] sm:h-[45vh] overflow-hidden">
         <img
-          src="/Home4.avif"
+          src="Home4.avif"
           alt="Apply"
           className="w-full h-full object-cover"
         />
@@ -303,7 +303,7 @@ const Apply = () => {
               <div className="bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden">
                 <div className="bg-white px-4 sm:px-8 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
                   <img
-                    src="/Start.avif"
+                    src="Start.avif"
                     alt="Logo"
                     className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
                   />
@@ -313,7 +313,7 @@ const Apply = () => {
                   </h2>
 
                   <img
-                    src="/Start.avif"
+                    src="Start.avif"
                     alt="Logo"
                     className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
                   />

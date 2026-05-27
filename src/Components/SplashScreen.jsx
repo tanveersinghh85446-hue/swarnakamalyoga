@@ -34,7 +34,7 @@ function SplashScreen({ onFinish }) {
 
       {/* Logo */}
       <img
-        src="/Start.avif"
+        src="Start.avif"
         alt="Swarna Kamal Logo"
         className={`relative z-10 mb-7 transition-all duration-700 ${
           step >= 0 ? "opacity-100 scale-100" : "opacity-0 scale-75"

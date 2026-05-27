@@ -99,7 +99,7 @@ const images = [
   "/G77.AVIF",
   "/G78.AVIF",
   "/G79.AVIF",
-  "G80.AVIF",
+  "/G80.AVIF",
   "/G81.AVIF",
   "/G82.AVIF",
   "/G83.AVIF",
