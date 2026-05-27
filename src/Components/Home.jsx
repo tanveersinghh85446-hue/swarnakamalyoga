@@ -67,7 +67,7 @@ const whyUs = [
   {
     title: "All Ages Welcome",
     desc: "From toddlers to seniors — classes for every age group and fitness level.",
-    img: "/OldAge.AVIF",
+    img: "/Oldage.AVIF",
     to: "/about",
   },
   {
