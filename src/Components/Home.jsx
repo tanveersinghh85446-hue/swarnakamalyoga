@@ -85,7 +85,7 @@ const whyUs = [
   {
     title: "Personalized Guidance",
     desc: "Small batch sizes ensure every student receives individual attention.",
-    img: "Personalized_Guidance.AVIF",
+    img: "/PersonalizedGuidance.AVIF",
     to: "/contact",
   },
 ];
