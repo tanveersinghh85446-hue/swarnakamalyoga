@@ -15,16 +15,18 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-black-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
+        <div className="flex">
+          <Link to="/" className="flex items-center gap-2">
           <img
-            src="/Start.AVIF"
+            src="/Start.avif"
             alt="logo"
             className="w-9 h-9 rounded-full object-cover"
           />
-          <span className="text-white font-semibold text-lg tracking-wide">
-            Swarna Kamal Yoga
-          </span>
         </Link>
+        <span className="text-white font-semibold text-lg tracking-wide mt-1">
+          Swarna Kamal Yoga
+        </span>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

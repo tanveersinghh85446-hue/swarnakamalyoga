@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex flex-col items-start text-left">
               <img
-                src="/Start.AVIF"
+                src="/Start.avif"
                 alt="logo"
                 className="w-32 sm:w-36 md:w-40 object-contain mb-3"
               />
