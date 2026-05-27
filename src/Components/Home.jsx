@@ -5,28 +5,28 @@ import Faq from "./Faq";
 
 const slides = [
   {
-    img: "Home4.avif",
+    img: "/Home4.avif",
     title: "SWARNA KAMAL YOGA",
     sub: "Transform your mind, body & soul since 2012",
     btn: "Book a Free Trial",
     to: "/apply",
   },
   {
-    img: "Home2.avif",
+    img: "/Home2.avif",
     title: "TEACHER TRAINING COURSES",
     sub: "Internationally recognized Teacher Training Courses",
     btn: "View Courses",
     to: "/courses",
   },
   {
-    img: "Home1.webp",
+    img: "/Home2.avif",
     title: "ONLINE CLASSES",
     sub: "Learn from anywhere — flexible batches available",
     btn: "Apply Now",
     to: "/apply",
   },
   {
-    img: "Home5.webp",
+    img: "/Home5.webp",
     title: "WOMEN'S WELLNESS YOGA",
     sub: "Specialized courses for hormonal health & complete wellbeing",
     btn: "Explore More",
@@ -38,7 +38,7 @@ const courses = [
   {
     title: "200 Hour TTC",
     desc: "The globally recognized standard for certified yoga instructors.",
-    img: "200_Hour_TTC.webp",
+    img: "/200_Hour_TTC.webp",
     to: "/TwoHundred",
     badge: "Most Popular",
   },
@@ -352,7 +352,7 @@ const Home = () => {
             <FadeIn delay={0.2} className="flex-1 flex justify-center">
               <div className="img-zoom w-64 sm:w-72 md:w-80 h-80 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-100">
                 <img
-                  src="Samita4.avif"
+                  src="/Samita4.avif"
                   alt="Yoga"
                   className="w-full h-full object-cover"
                 />
