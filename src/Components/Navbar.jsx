@@ -18,7 +18,7 @@ function Navbar() {
         <div className="flex">
           <Link to="/" className="flex items-center gap-2">
           <img
-            src="Start.avif"
+            src="/Start.avif"
             alt="logo"
             className="w-9 h-9 rounded-full object-cover"
           />
