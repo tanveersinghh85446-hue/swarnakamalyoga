@@ -5,7 +5,7 @@ import Faq from "./Faq";
 
 const slides = [
   {
-    img: "/Home4.AVIF",
+    img: "/Home4.Webp",
     title: "SWARNA KAMAL YOGA",
     sub: "Transform your mind, body & soul since 2012",
     btn: "Book a Free Trial",

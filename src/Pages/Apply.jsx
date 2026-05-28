@@ -232,7 +232,7 @@ const Apply = () => {
       {/* ── HERO BANNER ── */}
       <div className="relative w-full h-[38vh] sm:h-[45vh] overflow-hidden">
         <img
-          src="Home4.AVIF"
+          src="/Home4.Webp"
           alt="Apply"
           className="w-full h-full object-cover"
         />
