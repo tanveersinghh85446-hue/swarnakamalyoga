@@ -44,7 +44,7 @@ function SplashScreen({ onFinish }) {
       <img
         src="/Start.AVIF"
         alt="Swarna Kamal Logo"
-        className={`relative z-10 mb-7 h-50 w-170 transition-all duration-700 ${
+        className={`relative z-10 mb-7 h-50 w-200 transition-all duration-700 ${
           step >= 1 ? "opacity-100 scale-100" : "opacity-0 scale-75" // ✅ Fix 2: step >= 1 kiya
         }`}
         style={{
