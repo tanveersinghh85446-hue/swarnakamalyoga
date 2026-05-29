@@ -123,4 +123,12 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- GALLERY -->
+<url>
+  <loc>https://www.swarnakamalyoga.com/gallery</loc>
+  <lastmod>2026-05-29</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 </urlset>
