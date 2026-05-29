@@ -157,7 +157,6 @@ function Blog() {
 
                 {/* Content */}
                 <div className="p-6">
-                  
                   {/* Meta Info */}
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <span className="flex items-center gap-1">

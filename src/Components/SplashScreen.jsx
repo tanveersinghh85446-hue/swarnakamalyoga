@@ -6,17 +6,17 @@ function SplashScreen({ onFinish }) {
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setStep(1), 400), 
-      setTimeout(() => setStep(2), 1000), 
-      setTimeout(() => setStep(3), 2200), 
-      setTimeout(() => setStep(4), 3000), 
+      setTimeout(() => setStep(1), 400),
+      setTimeout(() => setStep(2), 1000),
+      setTimeout(() => setStep(3), 2200),
+      setTimeout(() => setStep(4), 3000),
       setTimeout(() => {
-        setVisible(false); 
+        setVisible(false);
         onFinish();
       }, 3700),
     ];
     return () => timers.forEach(clearTimeout);
-  }, [onFinish]); 
+  }, [onFinish]);
 
   if (!visible) return null;
 
@@ -101,7 +101,7 @@ function SplashScreen({ onFinish }) {
           className="h-full rounded-full"
           style={{
             background: "rgba(255,255,255,0.75)",
-          
+
             animation: step >= 1 ? "loader 2.6s linear forwards" : "none",
           }}
         />
@@ -118,7 +118,7 @@ function SplashScreen({ onFinish }) {
           letterSpacing: "3px",
         }}
       >
-        Transform Your Mind  Body  Soul
+        Transform Your Mind Body Soul
       </p>
 
       <style>{`

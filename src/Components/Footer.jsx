@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoMdMailUnread } from "react-icons/io";
-import { FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -149,8 +155,8 @@ const Footer = () => {
 
         {/* COPYRIGHT */}
         <div className="border-t border-stone-700 mt-10 pt-6 text-center text-xs sm:text-sm text-stone-400">
-          © {new Date().getFullYear()} Swarna Kamal Yoga Center, Bengaluru.
-          All rights reserved.
+          © {new Date().getFullYear()} Swarna Kamal Yoga Center, Bengaluru. All
+          rights reserved.
         </div>
       </div>
     </footer>

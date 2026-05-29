@@ -1502,4 +1502,3 @@ export default function Team() {
     </div>
   );
 }
-
