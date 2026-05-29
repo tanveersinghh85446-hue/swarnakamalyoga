@@ -182,6 +182,48 @@ const Home = () => {
   const [showTop, setShowTop] = useState(false);
   const timerRef = useRef(null);
 
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
+  const [result, setResult] = useState(null);
+
+  const calculateBMI = () => {
+    if (!weight || !height) return;
+    const h = height / 100;
+    const bmi = weight / (h * h);
+    setResult(bmi.toFixed(1));
+  };
+
+  const getBMICategory = (bmi) => {
+    const val = parseFloat(bmi);
+    if (val < 18.5)
+      return {
+        label: "Underweight",
+        color: "text-blue-500",
+        tip: "Nourish your body with wholesome foods and gentle strength-building yoga asanas.",
+      };
+    if (val < 25)
+      return {
+        label: "Normal weight",
+        color: "text-green-500",
+        tip: "Wonderful! Maintain your balance with regular yoga and mindful eating.",
+      };
+    if (val < 30)
+      return {
+        label: "Overweight",
+        color: "text-yellow-500",
+        tip: "A mix of cardio yoga flows and breathwork can support a healthy shift.",
+      };
+    return {
+      label: "Obese",
+      color: "text-red-500",
+      tip: "Begin with gentle yoga and consult one of our instructors for a personal plan.",
+    };
+  };
+
+  const category = result ? getBMICategory(result) : null;
+  const bmiPercent = result
+    ? Math.min(100, Math.max(0, ((parseFloat(result) - 10) / 35) * 100))
+    : 0;
   const { ref: statsRef, visible: statsVisible } = useVisible(0.3);
 
   useEffect(() => {
@@ -485,6 +527,96 @@ const Home = () => {
                 >
                   Start Your Journey →
                 </Link>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* ── BMI CALCULATOR ── */}
+        <FadeIn>
+          <div className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-stone-50">
+            <div className="max-w-xl mx-auto">
+              <p className="text-center text-amber-600 font-semibold uppercase tracking-widest text-xs sm:text-sm mb-2">
+                Know Your Body
+              </p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-3">
+                BMI Calculator
+              </h2>
+              <p className="text-center text-gray-500 text-sm sm:text-base mb-8">
+                Discover your body mass index and get personalized wellness
+                guidance
+              </p>
+
+              <div className="bg-white border border-stone-100 shadow-sm rounded-2xl p-6 sm:p-10">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4">
+                  <div>
+                    <label className="text-gray-400 text-xs sm:text-sm mb-1 block">
+                      Weight
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="kg"
+                      className="border border-gray-200 w-full p-2.5 sm:p-3 rounded-lg bg-stone-50 text-gray-800 focus:border-amber-500 focus:outline-none transition text-sm sm:text-base"
+                      onChange={(e) => setWeight(e.target.value)}
+                    />
+                  </div>
+                  <div>
+                    <label className="text-gray-400 text-xs sm:text-sm mb-1 block">
+                      Height
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="cm"
+                      className="border border-gray-200 w-full p-2.5 sm:p-3 rounded-lg bg-stone-50 text-gray-800 focus:border-amber-500 focus:outline-none transition text-sm sm:text-base"
+                      onChange={(e) => setHeight(e.target.value)}
+                    />
+                  </div>
+                </div>
+
+                <button
+                  onClick={calculateBMI}
+                  className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full w-full font-bold transition text-sm sm:text-base"
+                >
+                  Calculate BMI
+                </button>
+
+                {result && category && (
+                  <div className="mt-6 sm:mt-8">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-gray-400 text-sm">Your BMI</span>
+                      <span
+                        className={`text-2xl sm:text-3xl font-bold ${category.color}`}
+                      >
+                        {result}
+                      </span>
+                    </div>
+
+                    <div className="w-full h-3 rounded-full bg-linear-to-r from-blue-400 via-yellow-400 to-red-500 mb-2 relative">
+                      {" "}
+                      <div
+                        className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-gray-400 rounded-full shadow transition-all duration-500"
+                        style={{ left: `calc(${bmiPercent}% - 8px)` }}
+                      />
+                    </div>
+                    <div className="flex justify-between text-xs text-gray-400 mb-4">
+                      <span>Underweight</span>
+                      <span>Normal</span>
+                      <span>Overweight</span>
+                      <span>Obese</span>
+                    </div>
+
+                    <div className="bg-amber-50 border border-amber-100 rounded-xl p-4">
+                      <p
+                        className={`font-bold text-base sm:text-lg ${category.color}`}
+                      >
+                        {category.label}
+                      </p>
+                      <p className="text-gray-500 text-xs sm:text-sm mt-1">
+                        {category.tip}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
