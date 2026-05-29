@@ -11,7 +11,7 @@ function SplashScreen({ onFinish }) {
       setTimeout(() => setStep(3), 2200), 
       setTimeout(() => setStep(4), 3000), 
       setTimeout(() => {
-        setVisible(false); // Remove from DOM
+        setVisible(false); 
         onFinish();
       }, 3700),
     ];
@@ -44,7 +44,7 @@ function SplashScreen({ onFinish }) {
       <img
         src="/Start.AVIF"
         alt="Swarna Kamal Logo"
-        className={`relative z-10 mb-7 transition-all duration-700 ${
+        className={`relative z-10 mb-7 h-50 w-170 transition-all duration-700 ${
           step >= 1 ? "opacity-100 scale-100" : "opacity-0 scale-75" // ✅ Fix 2: step >= 1 kiya
         }`}
         style={{
@@ -109,7 +109,7 @@ function SplashScreen({ onFinish }) {
 
       {/* Tagline */}
       <p
-        className={`relative z-10 mt-4 transition-all duration-700 ${
+        className={`relative uppercase z-10 mt-4 transition-all duration-700 ${
           step >= 3 ? "opacity-100" : "opacity-0"
         }`}
         style={{
@@ -118,7 +118,7 @@ function SplashScreen({ onFinish }) {
           letterSpacing: "3px",
         }}
       >
-        Transform Your Mind • Body • Soul
+        Transform Your Mind  Body  Soul
       </p>
 
       <style>{`
