@@ -3,6 +3,48 @@ import { Link } from "react-router-dom";
 
 // Complete Feedback Responses from Swarna Kamal Yoga Center
 const feedbackData = [
+{
+    name: "Naheed Hanif",
+    date: "June 3, 2026",
+    comments:
+      "Feedback of Pilates teacher training course Sangeetha ma’am is one of the sweetest and kindest teacher. I was skeptical about joining this course as firstly i am beginner and secondly i was worried about posture since its online but after the course completion i am glad to have taken the right decision . Ma’am always gives attention to detail to each and every student and never once I felt I can’t do any particular exercise because Ma’am always made sure to break it down and she has loads of patience . Her knowledge on the subject shows how passionate she is about her learning and  teachings . Always motivating us for doing better each n everyday . I can see myself being confident  in performing all the exercises under her expertise . I am happy to have learnt  under her guidance and also sad that I am going to miss the classes and her sweet voice .Thank you ma’am",
+    rating: "5 – Excellent ",
+  },
+  {
+    name: "Viji",
+    date: "June 5, 2026",
+    comments:
+      "Where do I even begin? There is so much I have learned from this class that it's difficult to put into words. When I first joined, I wasn't sure if I would enjoy Pilates since it was something completely new to me. However, with a trainer like Sangeetha, those doubts quickly disappeared. Over the course of just one month, I learned lessons that went far beyond Pilates, health, and fitness. I learned the importance of punctuality and showing up consistently. I learned patience by returning to class again and again, even when progress felt slow and challenging. The journey wasn't always easy, but every small improvement, combined with Sangeetha's constant encouragement and motivation, kept me going and gave me confidence to continue. As for our trainer, I've known Sangeetha for almost six years, and throughout these classes she was much more than a coach. She made everyone feel welcome, respected, comfortable, and most importantly, good about themselves. She truly felt like one of us. Thank you so much, Sangeetha, for your guidance, support, and positivity. I wish you all the success and happiness in your career. May the Lord continue to bless you and shower you with endless success. With gratitude,",
+    rating: "5 – Excellent ",
+  },
+  {
+    name: "Sanjeevani",
+    date: "June 5, 2026",
+    comments:
+      "What can I say about Sangeeta! I’ve known her personally for a long time, but as a professional this was my first interaction. Her passion for her work is contagious. It makes me question my own discipline. I wonder how she shows up every single day with the same fire! Now coming to the class, it’s been such a learning curve in terms of my fitness journey. There were postures and exercises that felt like impossible in the first attempt. But Sangeeta’s patience and her ability to match a student’s individual capacity kept me motivated. Although it was online class, nothing could escape her keen observation. And she’s been so invested in our progress. The design of the course as well felt very conducive for beginners like me and seasoned practitioners too who were part of the group. And last but not the least, a shout out to all the women in the group. Such a tremendous source of inspiration. Each one, a force of nature in her own might! A power packed Pilates Class indeed! ❤️🙏🏾",
+    rating: "5 – Excellent ",
+  },
+   {
+    name: "Renu Adlakha",
+    date: "June 5, 2026",
+    comments:
+      "l would like to express my heartfelt gratitude to Sangeeta Ma'am for her guidance throughout the Pilates TTC course. She is truly an inspiration and a remarkable mentor. Her deep knowledge of the subject, combined with her passion for teaching, made every session valuable and engaging. The way she explained each exercise, along with its modifications and variations, was commendable and helped us understand the concepts thoroughly. I have learned so much from her, not only about Pilates but also about becoming a better instructor. Thank you, Ma'am, for sharing your expertise, motivating us, and making this learning journey so enriching and enjoyable.⭐🙏 With Regards",
+    rating: "5 – Excellent ",
+  },
+  {
+    name: "Divya",
+    date: "June 3, 2026",
+    comments:
+      "Feedback for Sangeeta Ma'am – Pilates Teacher Training Course I am truly grateful to Sangeeta Ma'am for her exceptional guidance throughout the Pilates Teacher Training Course. Her teaching approach is professional, well-organized, and easy to follow, making the learning process both enjoyable and effective. Sangeeta Ma'am has a deep understanding of Pilates principles, anatomy, alignment, breathing techniques, and movement patterns. She explains each concept with clarity and patience, ensuring that every student develops a strong foundation in both theory and practical application. What I appreciated most was her encouraging and supportive nature. She was always willing to answer questions, provide constructive feedback, and motivate students to improve their skills and confidence as future Pilates instructors. This course has greatly enhanced my knowledge, teaching abilities, and understanding of mindful movement. The skills and insights I have gained will be invaluable in my professional journey. Thank you, Sangeeta Ma'am, for your dedication, expertise, and continuous support. Your passion for teaching has made this training a truly rewarding and inspiring experience. Best Regards,",
+    rating: "5 – Excellent ",
+  },
+  {
+    name: "Meena",
+    date: "June 3, 2026",
+    comments:
+      "Dear Mam💐💐I am meena. As our Pilates Teacher Training classes are coming to an end, I feel a bit sad but deeply grateful. You have been an absolutely amazing teacher! Your way of teaching is incredible, and every instruction you gave was so clear and easy to understand.​This training has been a wonderful opportunity for me to dive deeper into the subject. I am incredibly thankful for your constant support—you were always there to clear our doubts at any time. Also the video clippings you shared have been extremely helpful for our practice. Thank you so much for everything Mam🙏🙏🙏",
+    rating: "5 – Excellent ",
+  },
   {
     name: "Dee",
     date: "May 23, 2026",
