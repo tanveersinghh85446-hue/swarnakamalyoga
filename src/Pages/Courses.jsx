@@ -184,8 +184,8 @@ const courses = [
     mode: "Live + Recorded",
     startDate: "July 6th, 2026",
     // endDate: "Aug 3, 2026",
-    schedule: "7:30 PM - 8:45 PM IST",
-    days: "Mon - Wed - Fri (No. Of Weeks :8 Weeks)",
+    schedule: "8:00 PM - 9:00 PM (No. Of Weeks :8 Weeks)",
+    days: "MONDAY, TUESDAY, THURSDAY, FRIDAY ",
     highlights: ["Core", "Flexibility", "Balance", "Training"],
   },
   {

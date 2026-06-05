@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // Complete Feedback Responses from Swarna Kamal Yoga Center
 const feedbackData = [
-{
+  {
     name: "Naheed Hanif",
     date: "June 3, 2026",
     comments:
@@ -24,7 +24,7 @@ const feedbackData = [
       "What can I say about Sangeeta! I’ve known her personally for a long time, but as a professional this was my first interaction. Her passion for her work is contagious. It makes me question my own discipline. I wonder how she shows up every single day with the same fire! Now coming to the class, it’s been such a learning curve in terms of my fitness journey. There were postures and exercises that felt like impossible in the first attempt. But Sangeeta’s patience and her ability to match a student’s individual capacity kept me motivated. Although it was online class, nothing could escape her keen observation. And she’s been so invested in our progress. The design of the course as well felt very conducive for beginners like me and seasoned practitioners too who were part of the group. And last but not the least, a shout out to all the women in the group. Such a tremendous source of inspiration. Each one, a force of nature in her own might! A power packed Pilates Class indeed! ❤️🙏🏾",
     rating: "5 – Excellent ",
   },
-   {
+  {
     name: "Renu Adlakha",
     date: "June 5, 2026",
     comments:
