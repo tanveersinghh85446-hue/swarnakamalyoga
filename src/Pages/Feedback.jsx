@@ -11,6 +11,13 @@ const feedbackData = [
     rating: "5 – Excellent ",
   },
   {
+    name: "Sasi",
+    date: "June 8, 2026",
+    comments:
+      "I would like to sincerely thank Sangeetha for conducting such a wonderful Pilates TTC course. Every class was informative, engaging, and motivating. What impressed me the most was her ability to explain each exercise clearly, along with the modifications and variations, making it easy for everyone to learn at their own pace. Beyond being an excellent trainer, Sangeetha is a genuinely warm and approachable person. She created a positive and comfortable environment where everyone felt encouraged and supported. Her patience, kindness, and positive energy made every session enjoyable and something to look forward to. The course has not only improved my understanding of Pilates but has also inspired me to make it a part of my regular fitness routine. Thank you, Sangeetha, for sharing your knowledge and making this learning journey so enjoyable. Wishing you continued success and happiness always. 🙏✨ Best wishes....",
+    rating: "5 – Excellent ",
+  },
+  {
     name: "Viji",
     date: "June 5, 2026",
     comments:
