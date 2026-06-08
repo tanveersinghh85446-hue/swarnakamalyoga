@@ -1,10 +1,7 @@
-// blogdata.js
-
 export const blogdata = [
   {
-    id: 1,
-    title: "Yoga for Healthy Life",
     slug: "yoga-for-healthy-life",
+    title: "Yoga for Healthy Life",
     excerpt:
       "Discover how yoga transforms your body, mind, and soul. Learn ancient practices for modern wellness and holistic living.",
     content: `
@@ -38,18 +35,15 @@ export const blogdata = [
       <p>Join our certified courses to learn from expert instructors and embark on your transformative yoga journey today!</p>
     `,
     author: "Swarna Kamal Team",
-    authorImage: "",
     date: "March 15, 2024",
     readTime: "8 min read",
     category: "Wellness",
     image: "postures.webp",
     tags: ["Health", "Lifestyle", "Wellness", "Yoga"],
-    featured: true,
   },
   {
-    id: 2,
-    title: "Benefits of Pranayama",
     slug: "benefits-of-pranayama",
+    title: "Benefits of Pranayama",
     excerpt:
       "Explore the science behind breathing techniques and how pranayama can revolutionize your health and well-being.",
     content: `
@@ -70,13 +64,13 @@ export const blogdata = [
       
       <h2>Popular Pranayama Techniques</h2>
       
-      <h3>1. Anulom Vilom (Alternate Nostril Breathing)</h3>
+      <h3><strong>1. Anulom Vilom (Alternate Nostril Breathing)</strong></h3>
       <p>This technique balances the left and right hemispheres of the brain, promoting mental clarity and calmness. Practice for 5-10 minutes daily for best results.</p>
       
-      <h3>2. Kapalbhati (Skull Shining Breath)</h3>
+      <h3><strong>2. Kapalbhati (Skull Shining Breath)</strong></h3>
       <p>A powerful cleansing technique that detoxifies the body and energizes the mind. It's excellent for weight loss and improving digestive health.</p>
       
-      <h3>3. Bhramari (Bee Breath)</h3>
+      <h3><strong>3. Bhramari (Bee Breath)</strong></h3>
       <p>Known for its calming effects, Bhramari is particularly effective for reducing stress, anxiety, and anger. It's perfect for practicing before sleep.</p>
       
       <blockquote>
@@ -89,18 +83,15 @@ export const blogdata = [
       <p>Our Pranayama Mudra Meditations Certificate Course covers 35+ breathing techniques in detail. Join us to master this life-changing practice!</p>
     `,
     author: "Swarna Kamal Team",
-    authorImage: "",
     date: "March 10, 2024",
     readTime: "10 min read",
     category: "Breathwork",
     image: "chakras.webp",
     tags: ["Pranayama", "Breathing", "Meditation", "Health"],
-    featured: true,
   },
   {
-    id: 3,
-    title: "Meditation for Beginners",
     slug: "meditation-for-beginners",
+    title: "Meditation for Beginners",
     excerpt:
       "Start your meditation journey with simple techniques that bring peace and clarity to your daily life.",
     content: `
@@ -120,13 +111,13 @@ export const blogdata = [
       
       <h2>Getting Started: Simple Techniques</h2>
       
-      <h3>1. Breath Awareness Meditation</h3>
+      <h3><strong>1. Breath Awareness Meditation</strong></h3>
       <p>The simplest form of meditation. Sit comfortably, close your eyes, and focus on your natural breath. When your mind wanders, gently bring attention back to the breath. Start with just 5 minutes daily.</p>
       
-      <h3>2. Body Scan Meditation</h3>
+      <h3><strong>2. Body Scan Meditation</strong></h3>
       <p>Lie down comfortably and mentally scan your body from toes to head, releasing tension in each part. This practice promotes deep relaxation and body awareness.</p>
       
-      <h3>3. Mantra Meditation</h3>
+      <h3><strong>3. Mantra Meditation</strong></h3>
       <p>Repeat a word or phrase (like "Om" or "Peace") either aloud or mentally. The repetition helps quiet the mind and deepen concentration.</p>
       
       <h2>Common Challenges and Solutions</h2>
@@ -150,18 +141,15 @@ export const blogdata = [
       <p>Explore our meditation courses to learn various techniques and deepen your practice with expert guidance!</p>
     `,
     author: "Swarna Kamal Team",
-    authorImage: "",
     date: "March 5, 2024",
     readTime: "7 min read",
     category: "Meditation",
     image: "yoga.webp",
     tags: ["Meditation", "Mindfulness", "Peace", "Beginners"],
-    featured: false,
   },
   {
-    id: 6,
-    title: "Power of Mindfulness",
     slug: "power-of-mindfulness",
+    title: "Power of Mindfulness",
     excerpt:
       "Cultivate present-moment awareness and transform stress into serenity through mindfulness practices.",
     content: `
@@ -182,38 +170,29 @@ export const blogdata = [
       
       <h2>Simple Mindfulness Practices</h2>
       
-      <h3>1. Mindful Breathing</h3>
+      <h3><strong>1. Mindful Breathing</strong></h3>
       <p>Take 5 minutes to focus solely on your breath. Notice the sensation of air entering and leaving your nostrils. When your mind wanders, gently return to the breath.</p>
       
-      <h3>2. Body Scan</h3>
+      <h3><strong>2. Body Scan</strong></h3>
       <p>Systematically bring awareness to different parts of your body, from toes to head. Notice any sensations without trying to change them.</p>
       
-      <h3>3. Mindful Walking</h3>
+      <h3><strong>3. Mindful Walking</strong></h3>
       <p>Walk slowly, paying attention to each step. Feel your feet connecting with the ground, the movement of your legs, the rhythm of your stride.</p>
       
-      <h3>4. Mindful Eating</h3>
+      <h3><strong>4. Mindful Eating</strong></h3>
       <p>Eat one meal without distractions. Notice colors, smells, textures, and flavors. Chew slowly and appreciate each bite.</p>
       
-      <h3>5. Five Senses Exercise</h3>
+      <h3><strong>5. Five Senses Exercise</strong></h3>
       <p>Pause and notice: 5 things you see, 4 you can touch, 3 you hear, 2 you smell, and 1 you taste. This anchors you in the present moment.</p>
       
       <h2>Incorporating Mindfulness into Daily Life</h2>
       
-      <p><strong>Morning:</strong> Start with 5 minutes of mindful breathing before checking your phone.</p>
-      
-      <p><strong>Work:</strong> Take mindful breaks. Step away from your desk, breathe, and reset.</p>
-      
-      <p><strong>Evening:</strong> Practice gratitude. Reflect on three good things from your day.</p>
-      
-      <p><strong>Night:</strong> Do a brief body scan before sleep to release tension.</p>
-      
-      <h2>Overcoming Common Obstacles</h2>
-      
-      <p><strong>"I'm too busy":</strong> Start with just 1-2 minutes. Mindfulness doesn't require extra time - you can practice while doing daily activities.</p>
-      
-      <p><strong>"My mind won't stop":</strong> That's normal! The practice is noticing when your mind wanders and gently bringing it back.</p>
-      
-      <p><strong>"I'm not doing it right":</strong> There's no "perfect" mindfulness. Any moment of awareness is success.</p>
+      <ul>
+        <li><strong>Morning:</strong> Start with 5 minutes of mindful breathing before checking your phone.</li>
+        <li><strong>Work:</strong> Take mindful breaks. Step away from your desk, breathe, and reset.</li>
+        <li><strong>Evening:</strong> Practice gratitude. Reflect on three good things from your day.</li>
+        <li><strong>Night:</strong> Do a brief body scan before sleep to release tension.</li>
+      </ul>
       
       <blockquote>
         "The present moment is the only time over which we have dominion." - Thích Nhất Hạnh
@@ -225,13 +204,11 @@ export const blogdata = [
       <p>Deepen your mindfulness practice through our meditation and wellness courses. Learn from experienced teachers and join a community of practitioners!</p>
     `,
     author: "Swarna Kamal Team",
-    authorImage: "",
     date: "February 15, 2024",
     readTime: "8 min read",
     category: "Mindfulness",
     image: "Meditation.webp",
     tags: ["Mindfulness", "Stress Relief", "Awareness", "Meditation"],
-    featured: false,
   },
 ];
 

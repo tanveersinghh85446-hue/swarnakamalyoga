@@ -177,13 +177,13 @@ export default function InstructorSlider() {
                 <div className="w-12 h-0.5 bg-amber-400 my-3 rounded-full" />
 
                 {/* Location */}
-                <p className="text-gray-500 text-xs text-center flex items-center gap-1">
+                <p className="text-black text-sm text-center flex items-center gap-1">
                   <span>📍</span> {instructor.location}
                 </p>
 
                 {/* Experience */}
-                <div className="mt-3 bg-red-50 border border-red-100 rounded-full px-4 py-1.5">
-                  <p className="text-red-600 text-xs font-semibold text-center">
+                <div className="mt-3 bg-amber-100 border border-amber-200 rounded-full px-4 py-1.5">
+                  <p className="text-amber-600 text-xs font-semibold text-center">
                     {instructor.experience}
                   </p>
                 </div>
