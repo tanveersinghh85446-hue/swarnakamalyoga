@@ -239,3 +239,5 @@ export default function InstructorSlider() {
     </div>
   );
 }
+
+export default InstructorSlider;
