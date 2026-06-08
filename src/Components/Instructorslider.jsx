@@ -80,7 +80,6 @@ const instructors = [
   },
 ];
 
-// Group into sets of 3
 function chunkArray(arr, size) {
   const chunks = [];
   for (let i = 0; i < arr.length; i += size) {
@@ -89,36 +88,54 @@ function chunkArray(arr, size) {
   return chunks;
 }
 
-const slides = chunkArray(instructors, 3);
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 640);
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 640);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+  return isMobile;
+}
 
 export default function InstructorSlider() {
+  const isMobile = useIsMobile();
+  const chunkSize = isMobile ? 1 : 3;
+  const slides = chunkArray(instructors, chunkSize);
+
   const [current, setCurrent] = useState(0);
   const [animating, setAnimating] = useState(false);
-  const [direction, setDirection] = useState(1); // 1 = forward, -1 = backward
+  const [direction, setDirection] = useState(1);
   const timerRef = useRef(null);
 
-  const startTimer = () => {
+  // Reset to 0 when chunk size changes (screen resize)
+  useEffect(() => {
+    setCurrent(0);
+  }, [chunkSize]);
+
+  const startTimer = (slideCount) => {
     clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      goTo(1);
+      goTo(1, slideCount);
     }, 3500);
   };
 
   useEffect(() => {
-    startTimer();
+    startTimer(slides.length);
     return () => clearInterval(timerRef.current);
     // eslint-disable-next-line
-  }, [current]);
+  }, [current, slides.length]);
 
-  const goTo = (dir) => {
+  const goTo = (dir, slideCount) => {
+    const total = slideCount ?? slides.length;
     if (animating) return;
     setDirection(dir);
     setAnimating(true);
     setTimeout(() => {
-      setCurrent((p) => (p + dir + slides.length) % slides.length);
+      setCurrent((p) => (p + dir + total) % total);
       setAnimating(false);
     }, 400);
-    startTimer();
+    startTimer(total);
   };
 
   return (
@@ -140,7 +157,9 @@ export default function InstructorSlider() {
         {/* Slider */}
         <div className="relative overflow-hidden">
           <div
-            className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 transition-all duration-400"
+            className={`grid gap-5 sm:gap-6 ${
+              isMobile ? "grid-cols-1" : "grid-cols-3"
+            }`}
             style={{
               opacity: animating ? 0 : 1,
               transform: animating
@@ -193,14 +212,14 @@ export default function InstructorSlider() {
 
           {/* Prev / Next buttons */}
           <button
-            onClick={() => goTo(-1)}
+            onClick={() => goTo(-1, slides.length)}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 bg-white border border-red-200 text-red-600 hover:bg-red-600 hover:text-white w-9 h-9 rounded-full shadow flex items-center justify-center transition-all z-10"
             aria-label="Previous"
           >
             ‹
           </button>
           <button
-            onClick={() => goTo(1)}
+            onClick={() => goTo(1, slides.length)}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 bg-white border border-red-200 text-red-600 hover:bg-red-600 hover:text-white w-9 h-9 rounded-full shadow flex items-center justify-center transition-all z-10"
             aria-label="Next"
           >
@@ -216,7 +235,7 @@ export default function InstructorSlider() {
               onClick={() => {
                 setDirection(i > current ? 1 : -1);
                 setCurrent(i);
-                startTimer();
+                startTimer(slides.length);
               }}
               className={`h-2 rounded-full transition-all duration-300 ${
                 i === current ? "w-6 bg-amber-400" : "w-2 bg-amber-200"
