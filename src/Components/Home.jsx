@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Faq from "./Faq";
+import InstructorSlider from "./InstructorSlider";
 
 const slides = [
   {
@@ -531,6 +532,8 @@ const Home = () => {
             </div>
           </div>
         </FadeIn>
+
+        <InstructorSlider />
 
         {/* ── BMI CALCULATOR ── */}
         <FadeIn>
