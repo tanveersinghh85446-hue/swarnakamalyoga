@@ -230,7 +230,7 @@ export default function InstructorSlider() {
         <div className="text-center mt-8">
           <a
             href="/team"
-            className="inline-block bg-red-700 hover:bg-red-800 text-white font-bold text-sm px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 transform shadow"
+            className="inline-block bg-amber-500 hover:bg-yellow-400 text-white font-bold text-sm px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 transform shadow"
           >
             Meet All Instructors →
           </a>
