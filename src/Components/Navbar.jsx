@@ -17,11 +17,16 @@ function Navbar() {
         {/* Logo */}
         <div className="flex">
           <Link to="/" className="flex items-center gap-2">
-            <img
+            {/* <img
               src="/Start.AVIF"
               alt="logo"
               className="w-9 h-9 rounded-full object-cover"
-            />
+            /> */}
+            <img
+  src="/Start.AVIF"
+  alt="logo"
+  className="w-12 h-12 rounded-full object-cover"
+/>
           </Link>
           <span className="text-white font-semibold text-lg tracking-wide mt-1">
             Swarna Kamal Yoga
