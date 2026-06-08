@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Faq from "./Faq";
-import INstructorSlider from "./Instructorslider";
+import InstructorSlider from "./Instructorslider";
 const slides = [
   {
     img: "/Home4.Webp",
