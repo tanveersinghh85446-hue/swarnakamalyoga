@@ -29,6 +29,7 @@ import ThreeHundred from "./Pages/ThreeHundred";
 import KundaliniYoga from "./Pages/CourseDetail/Kundaliniyoga";
 import Feedback from "./Pages/Feedback";
 import Footer from "./Components/Footer";
+import PostnatalCourse from "./Pages/CourseDetail/Postnatalcourse";
 
 function App() {
   const [splashDone, setSplashDone] = useState(false);
@@ -74,7 +75,11 @@ function App() {
             <Route path="/courses/therapy" element={<TherapyTeacher />} />
             <Route path="/courses/kids-training" element={<KidsTraining />} />
             <Route path="/courses/kundalini-yoga" element={<KundaliniYoga />} />
-            <Route path="/" element={<Footer/>}/>
+            <Route path="/" element={<Footer />} />
+            <Route
+              path="/courses/postnatal-training"
+              element={<PostnatalCourse />}
+            />
           </Routes>
         </Router>
       </div>
@@ -83,4 +88,3 @@ function App() {
 }
 
 export default App;
-

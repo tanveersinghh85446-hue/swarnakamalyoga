@@ -1,3 +1,552 @@
+// import { Link } from "react-router-dom";
+// import { FaOm, FaHeartbeat } from "react-icons/fa";
+// import {
+//   GiWeightLiftingUp,
+//   GiFlowerEmblem,
+//   GiMeditation,
+//   GiSportMedal,
+//   GiStomach,
+//   GiSpinalCoil,
+//   GiStrong,
+// } from "react-icons/gi";
+// import { FaPersonPregnant } from "react-icons/fa6";
+// import { SiLoop } from "react-icons/si";
+// import { PiBoneThin } from "react-icons/pi";
+// import { RiShiningFill, RiPsychotherapyFill } from "react-icons/ri";
+// import { FaNutritionix } from "react-icons/fa";
+// import { IoIosFlash } from "react-icons/io";
+// import { IoMoon } from "react-icons/io5";
+// import { LuBaby } from "react-icons/lu";
+// import { MdSelfImprovement, MdChair } from "react-icons/md";
+// import { TbWheel } from "react-icons/tb";
+// import { GiDuration } from "react-icons/gi";
+// import { MdLiveTv } from "react-icons/md";
+// import { FaRegCalendarAlt } from "react-icons/fa";
+// import { IoWomanOutline } from "react-icons/io5";
+// import { PiStarFour } from "react-icons/pi";
+// import { FaClock } from "react-icons/fa";
+// import Marquee from "react-fast-marquee";
+// import { TbStretching } from "react-icons/tb";
+// import { GrYoga } from "react-icons/gr";
+
+// const colors = [
+//   "from-pink-500 to-rose-500",
+//   "from-purple-500 to-indigo-500",
+//   "from-green-400 to-emerald-500",
+//   "from-yellow-400 to-orange-500",
+//   "from-blue-400 to-cyan-500",
+//   "from-fuchsia-500 to-pink-500",
+// ];
+
+// const items = [
+//   "Meditation",
+//   "Breathwork",
+//   "Vinyasa",
+//   "Hatha Yoga",
+//   "Yin Yoga TTC",
+//   "Ashtanga",
+//   "Morning Flow",
+//   "Power Yoga",
+//   "Asana Anatomy",
+//   "Face Yoga",
+//   "MAT Pilates",
+//   "Nutrition Course",
+//   "Kundalini Yoga",
+// ];
+
+// const workshopColors = [
+//   "from-teal-400 to-emerald-500",
+//   "from-orange-400 to-amber-500",
+//   "from-lime-400 to-green-500",
+//   "from-cyan-400 to-blue-500",
+//   "from-violet-400 to-purple-500",
+//   "from-rose-400 to-pink-500",
+//   "from-amber-400 to-yellow-500",
+//   "from-indigo-400 to-blue-500",
+// ];
+
+// // startDate  = sirf date  (e.g. "June 4, 2026")
+// // schedule   = time + days (e.g. "7:00 – 8:00 PM IST")
+// // days       = specific weekdays if any (e.g. "Mon, Wed, Fri")
+// const courses = [
+//   {
+//     id: 1,
+//     title: "Pranayama Mudra Meditations Certificate Course",
+//     slug: "pranayama",
+//     icon: <FaOm />,
+//     price: "₹8,500",
+//     duration: "35 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "Aug 3rd",
+//     schedule: "8 PM - 9 PM IST",
+
+//     highlights: [
+//       "Pranayama × 35",
+//       "Mudra Therapy × 60",
+//       "Meditation × 20",
+//       "Mantra Chanting × 25",
+//     ],
+//   },
+//   {
+//     id: 2,
+//     title: "Weight Loss Coach Certification",
+//     slug: "weight-loss",
+//     icon: <GiWeightLiftingUp />,
+//     price: "₹8,500",
+//     duration: "35 hrs",
+//     mode: "Live on Zoom",
+//     startDate: "June 4th, 2026",
+//     schedule: "7:00 PM IST",
+//     highlights: [
+//       "Asana Sequences",
+//       "HIIT & Tabata",
+//       "Yogic Diet & Nutrition",
+//       "Pranayama for Weight Loss",
+//     ],
+//   },
+//   {
+//     id: 3,
+//     title: "Women's Wellness Coach",
+//     slug: "womens-wellness",
+//     icon: <GiFlowerEmblem />,
+//     price: "₹9,000",
+//     duration: "40 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "June 4th, 2026",
+//     schedule: "12:00 PM IST",
+//     highlights: [
+//       "PCOS & Thyroid Therapy",
+//       "Hormonal Balance",
+//       "Pelvic Floor Anatomy",
+//       "Ayurvedic Approach",
+//     ],
+//   },
+//   {
+//     id: 6,
+//     title: "Ashtanga Vinyasa TTC",
+//     slug: "ashtanga",
+//     icon: <SiLoop />,
+//     price: "₹9,000",
+//     duration: "40 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "August 10, 2026",
+//     schedule: "11:00 AM – 12:00 PM IST",
+//     highlights: ["Primary Series", "Flow", "Bandhas", "Adjustments"],
+//   },
+//   {
+//     id: 7,
+//     title: "Asana Anatomy",
+//     slug: "asana-anatomy",
+//     icon: <PiBoneThin />,
+//     price: "₹6,000",
+//     duration: "22 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "August 3, 2026",
+//     schedule: "12:00 PM IST",
+//     highlights: ["Muscles", "Alignment", "Injury Prevention", "Safety"],
+//   },
+//   {
+//     id: 8,
+//     title: "Face Yoga",
+//     slug: "face-yoga",
+//     icon: <RiShiningFill />,
+//     price: "₹5,500",
+//     mode: "Live + Recorded",
+//     highlights: ["Glow", "Anti-Aging", "Acupressure", "Routine"],
+//   },
+//   {
+//     id: 9,
+//     title: "Nutrition Course",
+//     slug: "nutrition",
+//     icon: <FaNutritionix />,
+//     mode: "Live + Recorded",
+//     highlights: ["Diet", "Meals", "Water", "Balance"],
+//   },
+//   {
+//     id: 11,
+//     title: "Yin Yoga TTC",
+//     slug: "yin-yoga",
+//     icon: <IoMoon />,
+//     price: "₹6,500",
+//     duration: "26 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "July 2, 2026",
+//     schedule: "8:00 – 9:00 PM IST",
+//     highlights: ["Yin", "Fascia", "Meditation", "Teaching"],
+//   },
+//   {
+//     id: 12,
+//     title: "MAT Pilates",
+//     slug: "mat-pilates",
+//     icon: <GiSportMedal />,
+//     price: "₹8,500",
+//     duration: "30 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "August 10th, 2026",
+//     // endDate: "Aug 3, 2026",
+//     schedule: "8:00 PM - 9:00 PM (No. Of Weeks :8 Weeks)",
+//     days: "MONDAY, TUESDAY, THURSDAY, FRIDAY ",
+//     highlights: ["Core", "Flexibility", "Balance", "Training"],
+//   },
+//   {
+//     id: 13,
+//     title: "Therapy Course",
+//     slug: "therapy",
+//     icon: <RiPsychotherapyFill />,
+//     price: "₹8,500",
+//     duration: "35 hrs",
+//     mode: "Live + Recorded",
+//     startDate: "September 5, 2026",
+//     schedule: "12:00 PM IST",
+//     highlights: ["Therapy", "Healing", "Relaxation", "Naturopathy"],
+//   },
+//   {
+//     id: 14,
+//     title: "Kids Yoga TTC",
+//     slug: "kids-training",
+//     icon: <LuBaby />,
+//     price: "₹8,000",
+//     duration: "30 hrs",
+//     mode: "Live + Recorded",
+//     highlights: ["Kids Yoga", "Fun", "Safety", "Play"],
+//   },
+//   {
+//     id: 15,
+//     title: "Kundalini Yoga",
+//     slug: "kundalini-yoga",
+//     icon: <IoWomanOutline />,
+//     price: "₹10,000",
+//     duration: "45 hrs",
+//     mode: "Live + Recorded",
+//     highlights: [
+//       "Energy Awakening",
+//       "Chakra Balancing",
+//       "Breathwork (Pranayama)",
+//       "Meditation & Awareness",
+//     ],
+//   },
+// ];
+
+// const workshops = [
+//   { id: "w1", title: "Chair Yoga Workshop", icon: <MdChair />, colorIndex: 0 },
+//   {
+//     id: "w2",
+//     title: "Power Yoga Workshop",
+//     icon: <IoIosFlash />,
+//     colorIndex: 1,
+//   },
+//   {
+//     id: "w3",
+//     title: "Yoga Therapy for Digestive Disorders",
+//     icon: <GiStomach />,
+//     colorIndex: 2,
+//   },
+//   {
+//     id: "w4",
+//     title: "Yoga Therapy for Diabetes Reversal",
+//     icon: <FaHeartbeat />,
+//     colorIndex: 3,
+//   },
+//   {
+//     id: "w5",
+//     title: "Yoga Therapy for Thyroid Management",
+//     icon: <GiFlowerEmblem />,
+//     colorIndex: 4,
+//   },
+//   {
+//     id: "w6",
+//     title: "Yoga Therapy for Stress & Anxiety",
+//     icon: <GiMeditation />,
+//     colorIndex: 5,
+//   },
+//   {
+//     id: "w7",
+//     title: "Yoga Therapy for Neck & Back Pain Relief",
+//     icon: <PiBoneThin />,
+//     colorIndex: 6,
+//   },
+//   {
+//     id: "w8",
+//     title: "Yoga Therapy for Menopause",
+//     icon: <RiShiningFill />,
+//     colorIndex: 7,
+//   },
+//   {
+//     id: "w9",
+//     title: "Yoga Therapy for Somatic Awareness & Embodied Healing",
+//     icon: <MdSelfImprovement />,
+//     colorIndex: 0,
+//   },
+//   {
+//     id: "w10",
+//     title: "Master the Basics of Strength Training",
+//     icon: <GiStrong />,
+//     colorIndex: 1,
+//   },
+//   {
+//     id: "w11",
+//     title: "Garbh Sanskar — Journey of Pregnancy",
+//     icon: <FaPersonPregnant />,
+//     colorIndex: 2,
+//   },
+//   {
+//     id: "w12",
+//     title: "Prenatal Therapy Yoga",
+//     icon: <LuBaby />,
+//     colorIndex: 3,
+//   },
+//   {
+//     id: "w13",
+//     title: "Yoga Therapy for Spinal Health",
+//     icon: <GiSpinalCoil />,
+//     colorIndex: 4,
+//   },
+//   {
+//     id: "w14",
+//     title: "Pilates with Stick and Dumbbells",
+//     icon: <GiSportMedal />,
+//     colorIndex: 5,
+//   },
+//   {
+//     id: "w15",
+//     title: "Unwinding with Restorative Yoga",
+//     icon: <IoMoon />,
+//     colorIndex: 6,
+//   },
+//   { id: "w16", title: "Wheel Yoga", icon: <TbWheel />, colorIndex: 0 },
+//   {
+//     id: "w17",
+//     title: "Yoga for Infertility",
+//     icon: <IoWomanOutline />,
+//     colorIndex: 6,
+//   },
+//   {
+//     id: "w18",
+//     title: "Master the Basics of Strength & Conditioning",
+//     icon: <TbStretching />,
+//     colorIndex: 2,
+//   },
+//   { id: "w19", title: "Natya yoga", icon: <GrYoga />, colorIndex: 6 },
+// ];
+
+// function Courses() {
+//   return (
+//     <div className="bg-linear-to-b from-white to-gray-100 min-h-screen pt-16 border-t border-white/20">
+//       {/* ── HERO ── */}
+//       <section
+//         className="relative text-white py-16 sm:py-20 text-center bg-cover bg-center"
+//         style={{ backgroundImage: "url('God.webp')" }}
+//       >
+//         <div className="absolute inset-0 bg-black/50" />
+//         <div className="relative px-4">
+//           <p className="uppercase tracking-[0.25em] sm:tracking-[0.4em] text-xs mb-3 text-white/70">
+//             Live on Zoom
+//           </p>
+//           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-white leading-tight">
+//             Online Yoga Courses
+//           </h1>
+//           <p className="max-w-xl mx-auto text-base sm:text-lg text-white/85">
+//             Certified courses with expert trainers — learn grow & transform.
+//           </p>
+//         </div>
+//       </section>
+
+//       {/* ── CERTIFICATE COURSES ── */}
+//       <section className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
+//         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+//           {courses.map((course, i) => (
+//             <div
+//               key={course.id}
+//               className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition bg-white"
+//             >
+//               <div
+//                 className={`h-2 bg-linear-to-r ${colors[i % colors.length]}`}
+//               />
+//               <div className="p-5 sm:p-6">
+//                 <div className="flex justify-between items-start mb-4">
+//                   <span className="text-3xl sm:text-4xl text-purple-600">
+//                     {course.icon}
+//                   </span>
+//                   {course.price && (
+//                     <div className="bg-linear-to-r from-amber-400 to-yellow-500 text-black px-3 py-1 rounded-full font-bold text-sm shadow-md">
+//                       {course.price}
+//                     </div>
+//                   )}
+//                 </div>
+
+//                 <h3 className="font-bold text-base sm:text-xl mb-3 text-gray-900">
+//                   {course.title}
+//                 </h3>
+
+//                 <div className="flex flex-wrap gap-2 mb-4">
+//                   {course.duration && (
+//                     <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5">
+//                       <GiDuration className="text-base animate-spin text-amber-400" />
+//                       {course.duration}
+//                     </span>
+//                   )}
+//                   <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5">
+//                     <MdLiveTv className="text-base animate-bounce text-red-600" />
+//                     {course.mode}
+//                   </span>
+//                 </div>
+
+//                 {/* ── START DATE + SCHEDULE alag alag lines mein ── */}
+//                 {(course.startDate || course.schedule || course.days) && (
+//                   <div className="mb-4 space-y-1.5">
+//                     {course.startDate && (
+//                       <p className="text-yellow-500 text-sm sm:text-base font-bold flex items-center gap-2">
+//                         <FaRegCalendarAlt className="text-black shrink-0" />
+//                         <span>
+//                           Starts: {course.startDate}
+//                           {course.endDate && (
+//                             <span className="text-gray-500 font-medium">
+//                               {" "}
+//                               — {course.endDate}
+//                             </span>
+//                           )}
+//                         </span>
+//                       </p>
+//                     )}
+//                     {course.schedule && (
+//                       <p className="text-gray-600 text-sm font-semibold flex items-center gap-2">
+//                         <FaClock className="text-purple-400 shrink-0" />
+//                         {course.schedule}
+//                       </p>
+//                     )}
+//                     {course.days && (
+//                       <p className="text-indigo-500 text-xs font-bold flex items-center gap-2 uppercase tracking-wide">
+//                         <span className="w-3 h-3 rounded-full bg-indigo-400 shrink-0 inline-block" />
+//                         {course.days}
+//                       </p>
+//                     )}
+//                   </div>
+//                 )}
+
+//                 <ul className="space-y-1.5 mb-6">
+//                   {course.highlights.map((h, j) => (
+//                     <li key={j} className="text-sm text-gray-700 flex gap-2">
+//                       <span className="text-purple-500 font-bold">•</span>
+//                       {h}
+//                     </li>
+//                   ))}
+//                 </ul>
+
+//                 <Link
+//                   to={`/courses/${course.slug}`}
+//                   className="block text-center bg-linear-to-r from-purple-500 to-indigo-500 text-white py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold hover:opacity-90 transition shadow-lg"
+//                 >
+//                   View Syllabus →
+//                 </Link>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+
+//       {/* ── DIVIDER ── */}
+//       <div className="max-w-7xl mx-auto px-4">
+//         <div className="border-t border-gray-200" />
+//       </div>
+
+//       {/* ── ONLINE WORKSHOPS SECTION ── */}
+//       <section className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
+//         {/* ── MARQUEE STRIP ── */}
+//         <div className="relative z-10 mb-6 sm:mb-10 w-full overflow-hidden">
+//           <Marquee
+//             speed={50}
+//             gradient={false}
+//             direction="right"
+//             pauseOnHover={true}
+//           >
+//             {items.map((item) => (
+//               <span
+//                 key={item}
+//                 className="mx-3 inline-flex items-center gap-2 text-amber-600 font-semibold text-sm bg-white/60 border border-green-200 rounded-full px-6 py-3 shadow-sm"
+//               >
+//                 <PiStarFour className="text-xs" />
+//                 {item}
+//               </span>
+//             ))}
+//           </Marquee>
+//         </div>
+
+//         <div className="text-center mb-10 sm:mb-12 px-2">
+//           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 leading-tight">
+//             Welcome to{" "}
+//             <span className="text-yellow-400">Swarna Kamal Yoga</span> Online
+//             Workshop Courses
+//           </h2>
+//         </div>
+
+//         <hr className="bg-red-600 m-10" />
+
+//         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-7">
+//           {workshops.map((w) => (
+//             <div
+//               key={w.id}
+//               className="group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+//             >
+//               <div
+//                 className={`h-1.5 bg-linear-to-r ${workshopColors[w.colorIndex]}`}
+//               />
+//               <div className="p-5 sm:p-6 pt-4 sm:pt-5">
+//                 <div
+//                   className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-linear-to-br ${workshopColors[w.colorIndex]} flex items-center justify-center text-white text-xl sm:text-2xl mb-4 shadow-sm`}
+//                 >
+//                   {w.icon}
+//                 </div>
+//                 <h3 className="font-bold text-base sm:text-lg text-gray-900 mb-2 leading-snug">
+//                   {w.title}
+//                 </h3>
+//                 {w.tag && (
+//                   <p className="text-xs text-gray-500 mb-3 leading-relaxed">
+//                     {w.tag}
+//                   </p>
+//                 )}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+
+//       {/* ── BOTTOM CTA ── */}
+//       <section className="bg-linear-to-r from-red-500 to-yellow-400 text-white py-14 sm:py-16 text-center px-4">
+//         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
+//           Not sure which course ?
+//         </h2>
+//         <p className="mb-6 text-sm sm:text-base text-black">
+//           We'll guide you to the perfect one.
+//         </p>
+//         <div className="flex justify-center gap-4">
+//           <Link
+//             to="/contact"
+//             className="border px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base hover:bg-white hover:text-black transition text-white/90"
+//           >
+//             Contact
+//           </Link>
+//           <Link
+//             to="/apply"
+//             className="bg-white text-black px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base hover:bg-gray-200 transition"
+//           >
+//             Apply
+//           </Link>
+//         </div>
+//       </section>
+
+//       <div className="border-t border-stone-800 mt-10 pt-4 mb-8 text-center text-xs text-stone-500">
+//         © {new Date().getFullYear()} Swarna Kamal Yoga Center, Bengaluru. All
+//         rights reserved.
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Courses;
+
+
+
+
 import { Link } from "react-router-dom";
 import { FaOm, FaHeartbeat } from "react-icons/fa";
 import {
@@ -182,7 +731,7 @@ const courses = [
     price: "₹8,500",
     duration: "30 hrs",
     mode: "Live + Recorded",
-    startDate: "July 6th, 2026",
+    startDate: "August 10th, 2026",
     // endDate: "Aug 3, 2026",
     schedule: "8:00 PM - 9:00 PM (No. Of Weeks :8 Weeks)",
     days: "MONDAY, TUESDAY, THURSDAY, FRIDAY ",
@@ -223,6 +772,24 @@ const courses = [
       "Chakra Balancing",
       "Breathwork (Pranayama)",
       "Meditation & Awareness",
+    ],
+  },
+  {
+    id: 16,
+    title: "Postnatal Training Certification Program",
+    slug: "postnatal-training",
+    icon: <FaPersonPregnant />,
+    price: "₹4,000",
+    duration: "16 hrs",
+    mode: "Live + Recorded",
+    startDate: "July 23, 2026",
+    schedule: "7:00 PM – 8:00 PM IST",
+    highlights: [
+      "Pelvic Floor Muscle Training",
+      "Core Strengthening & Diastasis Recti",
+      "Postnatal Depression (PPD) Management",
+      "Breathwork & Meditation Techniques",
+      "YACEP Approved Certification",
     ],
   },
 ];
