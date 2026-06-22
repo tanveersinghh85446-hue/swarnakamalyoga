@@ -182,10 +182,10 @@ const courses = [
     price: "₹8,500",
     duration: "30 hrs",
     mode: "Live + Recorded",
-    startDate: "August 10th, 2026",
-    // endDate: "Aug 3, 2026",
+    startDate: "July 23rd, 2026",
+    Teacher: "Dr .Smita.K",
     schedule: "8:00 PM - 9:00 PM (No. Of Weeks :8 Weeks)",
-    days: "MONDAY, TUESDAY, THURSDAY, FRIDAY ",
+    days: "MONDAY TO FRIDAY ",
     highlights: ["Core", "Flexibility", "Balance", "Training"],
   },
   {
@@ -231,10 +231,12 @@ const courses = [
     slug: "postnatal-training",
     icon: <FaPersonPregnant />,
     price: "₹4,000",
-    duration: "16 hrs",
+    duration: "16 Classes",
     mode: "Live + Recorded",
-    startDate: "July 23, 2026",
+    startDate: "July 23, To Aug 13th 2026",
+    Teacher: "Dr .Smita.K",
     schedule: "7:00 PM – 8:00 PM IST",
+    days: "MONDAY TO FRIDAY ",
     highlights: [
       "Pelvic Floor Muscle Training",
       "Core Strengthening & Diastasis Recti",
@@ -417,10 +419,10 @@ function Courses() {
                         <FaRegCalendarAlt className="text-black shrink-0" />
                         <span>
                           Starts: {course.startDate}
-                          {course.endDate && (
+                          {course.Teacher && (
                             <span className="text-gray-500 font-medium">
                               {" "}
-                              — {course.endDate}
+                              — {course.Teacher}
                             </span>
                           )}
                         </span>
