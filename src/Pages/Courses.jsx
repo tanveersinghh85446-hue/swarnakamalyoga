@@ -184,7 +184,7 @@ const courses = [
     mode: "Live + Recorded",
     startDate: "July 23rd, 2026",
     Teacher: "Dr .Smita.K",
-    schedule: "8:00 PM - 9:00 PM (No. Of Weeks :8 Weeks)",
+    schedule: "8:00 PM - 9:00 PM",
     days: "MONDAY TO FRIDAY ",
     highlights: ["Core", "Flexibility", "Balance", "Training"],
   },
