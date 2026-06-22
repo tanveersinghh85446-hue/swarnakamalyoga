@@ -258,7 +258,7 @@ const Home = () => {
   };
 
   return (
-    <div className="w-full font-sans overflow-x-hidden pt-16 border-t border-white/2">
+    <div className="w-full font-sans overflow-x-hidden border-white/2">
       <main>
         {/* ── 1. HERO SLIDER ── */}
         <div className="w-full h-[65vh] sm:h-[75vh] md:h-[80vh] lg:h-[85vh] overflow-hidden relative">
