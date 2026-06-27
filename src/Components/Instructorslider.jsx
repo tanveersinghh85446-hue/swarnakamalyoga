@@ -174,7 +174,7 @@ export default function InstructorSlider() {
                 className="bg-white rounded-2xl overflow-hidden shadow-md border border-red-100 flex flex-col items-center p-6 hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Photo */}
-                <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-amber-400 shadow-md mb-4">
+                <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden  shadow-md mb-4">
                   <img
                     src={instructor.img}
                     alt={instructor.name}
@@ -209,22 +209,6 @@ export default function InstructorSlider() {
               </div>
             ))}
           </div>
-
-          {/* Prev / Next buttons */}
-          <button
-            onClick={() => goTo(-1, slides.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 bg-white border border-red-200 text-red-600 hover:bg-red-600 hover:text-white w-9 h-9 rounded-full shadow flex items-center justify-center transition-all z-10"
-            aria-label="Previous"
-          >
-            ‹
-          </button>
-          <button
-            onClick={() => goTo(1, slides.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 bg-white border border-red-200 text-red-600 hover:bg-red-600 hover:text-white w-9 h-9 rounded-full shadow flex items-center justify-center transition-all z-10"
-            aria-label="Next"
-          >
-            ›
-          </button>
         </div>
 
         {/* Dots */}
@@ -237,7 +221,7 @@ export default function InstructorSlider() {
                 setCurrent(i);
                 startTimer(slides.length);
               }}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={` ${
                 i === current ? "w-6 bg-amber-400" : "w-2 bg-amber-200"
               }`}
               aria-label={`Go to slide ${i + 1}`}

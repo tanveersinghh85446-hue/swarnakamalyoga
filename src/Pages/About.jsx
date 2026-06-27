@@ -144,7 +144,7 @@ export default function About() {
         {/* ── Accomplishments ── */}
         <div ref={accomplishRef} className="max-w-5xl mx-auto mt-16 text-left">
           <h3 className="text-2xl font-bold mb-6">Accomplishments</h3>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4">
             {accomplishments.map((item, i) => (
               <div
                 key={i}
